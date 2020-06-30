@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yo Merchandise - PEICEN LIU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+ 	<link rel="stylesheet" type="text/css" href="../css/GraphicDesignStyle.css">
+ 	<link rel="stylesheet" type="text/css" href="../css/GraphicDesignDetialStyle.css">
+ 	<link rel="stylesheet" href="../css/aos.css" />
+ 	<link rel="stylesheet" href="../css/btnStyle.css" />
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="content-wrap">
+		<p class="graphic-title">MY GRAPHIC DESIGN</p>
+		<hr>
+		<p class="graphic-intro">Yo Merchandise</p>
+		<div class="graphic-detail-container" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+			<div class="project-intro-content">
+				<a href="../graphic design.html"><button>Close</button></a>
+				<div class="project-intro">
+					<h1>遊不得你 周邊</h1>
+					<label class="project-tags">傳單</label>
+					<label class="project-tags">面紙包</label>
+					<label class="project-tags">貼紙</label>
+					<h2>設計理念</h2>
+					<p>中興新村為主軸的微旅行APP，<br />海報及傳單以立體的方式描繪出中興新村的景點，<br />並擺放巨大骰子營造出使用者將以骰遊的方式搭配APP遊玩，<br />面紙包的部分也使用吉祥物拿著骰子及行動裝置<br />來表達整體APP想呈現的概念。</p>
+					<div class="color-square">
+						<label style="background:#e0e0e0;"></label>
+						<label style="background:#75bd4d;"></label>
+						<label style="background:#61747b;"></label>
+					</div>
+				</div>
+				<div class="all-img-content">
+					<div class="img-group">
+						<div class="img-screen">
+							<img id="img-num-1" src="../img/yo-merchandise-img1.jpg" onclick="openImg()">
+						</div>
+					</div>
+					<div class="small-img-group">
+						<div class="small-img">
+							<img id="img-num-2" src="../img/yo-merchandise-img2.jpg" onclick="openImg()">
+							<img id="img-num-3" src="../img/yo-merchandise-img3.jpg" onclick="openImg()">
+							<img id="img-num-4" src="../img/yo-merchandise-img4.jpg" onclick="openImg()">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="project-detail-content"></div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div class="text-container">
+			<span>Peicen Liu</span>
+		</div>
+		<div class="btn-container">
+			<a href="../about.html">ABOUT</a>
+			<a href="../works.html">WORKS</a>
+			<a class="nowpage" href="../graphic design.html">GRAPHIC DESIGN</a>
+			<a href="https://drive.google.com/file/d/1nu_SvPkmKwNjqZmivEJHaXBu2ofRTJ4h/view?usp=sharing" target="_blank">RESUME</a><<br />
+			<a href="../index.html"><i class="fa fa-home" style="font-size:20px;"></i></a>
+		</div>
+	</div>
+	<div id="BackdropBox">
+		<div class="backdrop-content">
+			<!-- <div class="backdrop-header"> -->
+				<!-- <button type="button" class="closebtn">
+  					<span aria-hidden="true">&times;</span>
+				</button> -->
+				<div class="backdrop-outer">
+				  <div class="backdrop-inner">
+				    <label onclick="closeBtn()">Back</label>
+				  </div>
+				</div>
+			<!-- </div> -->
+			<div class="backdrop-figure">
+				<img id="outcome-img" src="">
+			</div>
+		</div>
+	</div>
+	<script src="../css/aos.js"></script>
+    <script>
+		AOS.init({
+		easing: 'ease-in-out-sine'
+		});
+		//圖片放大
+		function openImg() {
+			var nowid = event.target.id;  //取當前event的id
+			var num = nowid.charAt(nowid.length - 1); //取出id編號的最後字元
+			//var imgsrc=document.getElementById("img-num").src;
+		  document.getElementById("BackdropBox").style.display = "flex";
+		  document.getElementById("outcome-img").src="../img/yo-merchandise-img"+num+".jpg";  //將src設為當前id對應的圖片
+		}
+		// 關閉按鈕
+	    function closeBtn() {
+		  document.getElementById("BackdropBox").style.display = "none";
+		}
+    </script>
+</body>
+</html>

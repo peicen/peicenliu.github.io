@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee Cup Set - PEICEN LIU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+ 	<link rel="stylesheet" type="text/css" href="../css/GraphicDesignStyle.css">
+ 	<link rel="stylesheet" type="text/css" href="../css/GraphicDesignDetialStyle.css">
+ 	<link rel="stylesheet" href="../css/aos.css" />
+ 	<link rel="stylesheet" href="../css/btnStyle.css" />
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="content-wrap">
+		<p class="graphic-title">MY GRAPHIC DESIGN</p>
+		<hr>
+		<p class="graphic-intro">Coffee Cup Set</p>
+		<div class="graphic-detail-container" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+			<div class="project-intro-content">
+				<a href="../graphic design.html"><button>Close</button></a>
+				<div class="project-intro">
+					<h1>Love the world</h1>
+					<label class="project-tags">咖啡杯</label>
+					<label class="project-tags">外帶杯套設計</label>
+					<h2>設計理念</h2>
+					<p>是否還記得我們的家鄉呢。<br />
+是否記得，「愛」我們家鄉呢？<br /><br />
+以北極熊拿著咖啡外帶杯為出發點，<br />將背景描繪成與我們息息相關的地球，<br />
+我們所做的一舉一動影響著這世界的所有事物，<br />
+在我們忙碌的生活中，多分一點愛給這我們生活的地方吧！</p>
+					<div class="color-square">
+						<label style="background:#afd8e5;"></label>
+						<label style="background:#b0cd81;"></label>
+						<label style="background:#31897a;"></label>
+					</div>
+				</div>
+				<div class="img-group">
+					<div class="img-screen">
+						<img src="../img/coffee-img.jpg" onclick="openImg()">
+					</div>
+				</div>
+			</div>
+			<div class="project-detail-content"></div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div class="text-container">
+			<span>Peicen Liu</span>
+		</div>
+		<div class="btn-container">
+			<a href="../about.html">ABOUT</a>
+			<a href="../works.html">WORKS</a>
+			<a class="nowpage" href="../graphic design.html">GRAPHIC DESIGN</a>
+			<a href="https://drive.google.com/file/d/1nu_SvPkmKwNjqZmivEJHaXBu2ofRTJ4h/view?usp=sharing" target="_blank">RESUME</a><<br />
+			<a href="../index.html"><i class="fa fa-home" style="font-size:20px;"></i></a>
+		</div>
+	</div>
+	<div id="BackdropBox">
+		<div class="backdrop-content">
+			<!-- <div class="backdrop-header"> -->
+				<!-- <button type="button" class="closebtn">
+  					<span aria-hidden="true">&times;</span>
+				</button> -->
+				<div class="backdrop-outer">
+				  <div class="backdrop-inner">
+				    <label onclick="closeBtn()">Back</label>
+				  </div>
+				</div>
+			<!-- </div> -->
+			<div class="backdrop-figure">
+				<img src="../img/coffee-img.jpg">
+			</div>
+		</div>
+	</div>
+	<script src="../css/aos.js"></script>
+    <script>
+		AOS.init({
+		easing: 'ease-in-out-sine'
+		});
+		//圖片放大
+		function openImg() {
+		  document.getElementById("BackdropBox").style.display = "flex";
+		}
+		// 關閉按鈕
+	    function closeBtn() {
+		  document.getElementById("BackdropBox").style.display = "none";
+		}
+    </script>
+</body>
+</html>

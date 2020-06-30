@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LoRa - PEICEN LIU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+ 	<link rel="stylesheet" type="text/css" href="../css/WorksStyle.css">
+ 	<link rel="stylesheet" type="text/css" href="../css/WorksDetailStyle.css">
+ 	<link rel="stylesheet" href="../css/aos.css" />
+ 	<link rel="stylesheet" href="../css/btnStyle.css" />
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="content-wrap">
+		<p class="work-title">MY WORKS</p>
+		<hr>
+		<p class="work-intro">LoRa</p>
+		<div class="works-detail-container" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+     		<a href="../works.html"><button>Close</button></a>
+			<div class="project-intro-content">
+				<img src="../img/lora.png">
+				<div class="project-intro">
+					<p class="project-title">行 動 輔 具 故 障 診 斷 平 台</p>
+					<p class="project-desc">以LoRa為基礎的行動醫療輔具故障診斷系統</p>
+					<p class="project-program">Programming Language :</p>
+					<label class="program-language">Python</label>
+					<label class="program-language">D3.js</label>
+					<label class="program-language">MongoDB</label>
+				</div>
+			</div>
+			<div class="project-detail-content">
+				<h1>專案介紹</h1>
+				<p>本系統以LoRa無線傳輸技術為基礎，將行動醫療輔具所感測的巨量資料進行分類訓練，包含使用環境、位置、路徑追蹤等，將訓練完成的模型存放至樹莓派中，以透過樹莓派即時辨識目前行動輔具的狀態。<br />並利用LoRa無線網路架構進行資料傳輸整合後，使用RSSI三邊定位法追蹤行動輔具目前的位置，採用D3.js進行資料視覺化將辨識結果呈現於架設的平台中，以提供醫務管理者故障診斷與佈署之參考。</p>
+				<h1>實際結果</h1>
+				<div class="img-group">
+					<div class="img-screen">
+						<p>行動輔具故障診斷情境圖</p>
+						<img src="../img/lora_outcome1.jpg">
+					</div>
+					<div class="img-screen">
+						<p>LoRa App Server接收數據封包</p>
+						<img src="../img/lora_outcome2.jpg">
+					</div>
+					<div class="img-screen">
+						<p>網頁平台呈現數據分析結果</p>
+						<img src="../img/lora_outcome3.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div class="text-container">
+			<span>Peicen Liu</span>
+		</div>
+		<div class="btn-container">
+			<a href="../about.html">ABOUT</a>
+			<a class="nowpage" href="../works.html">WORKS</a>
+			<a href="../graphic design.html">GRAPHIC DESIGN</a>
+			<a href="https://drive.google.com/file/d/1nu_SvPkmKwNjqZmivEJHaXBu2ofRTJ4h/view?usp=sharing" target="_blank">RESUME</a><<br />
+			<a href="../index.html"><i class="fa fa-home" style="font-size:20px;"></i></a>
+		</div>
+	</div>
+	<script src="../css/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+</body>
+</html>

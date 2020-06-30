@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Violin Studio - PEICEN LIU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+ 	<link rel="stylesheet" type="text/css" href="../css/GraphicDesignStyle.css">
+ 	<link rel="stylesheet" type="text/css" href="../css/GraphicDesignDetialStyle.css">
+ 	<link rel="stylesheet" href="../css/aos.css" />
+ 	<link rel="stylesheet" href="../css/btnStyle.css" />
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="content-wrap">
+		<p class="graphic-title">MY GRAPHIC DESIGN</p>
+		<hr>
+		<p class="graphic-intro">Violin Studio</p>
+		<div class="graphic-detail-container" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+			<div class="project-intro-content">
+				<a href="../graphic design.html"><button>Close</button></a>
+				<div class="project-intro">
+					<h1>巷內小提琴工作室</h1>
+					<label class="project-tags">LOGO</label>
+					<label class="project-tags">招牌</label>
+					<label class="project-tags">名片</label>
+					<label class="project-tags">音樂工作室</label>
+					<h2>設計理念</h2>
+					<p>Violin Studio<br />以小提琴弓弦為主軸，<br />中間四條線代表琴弦，弦上的點代表音符的跳躍，<br />而上方不規則扭曲的線條則描繪出小提琴的樣子，<br />在色調方面也使用淺灰及藍綠色搭配，<br />讓整體看起來簡潔又增添幾分質感。</p>
+					<div class="color-square">
+						<label style="background:#7ea3a6;"></label>
+						<label style="background:#d3d3d3;"></label>
+						<label style="background:#f4f4f4;"></label>
+					</div>
+				</div>
+				<div class="all-img-content">
+					<div class="img-group">
+						<div class="img-screen">
+							<img id="img-num-0" src="../img/et-img0.png" onclick="openImg()">
+						</div>
+					</div>
+					<div class="small-img-group">
+						<div class="small-img">
+							<img id="img-num-1" src="../img/et-img1.png" onclick="openImg()">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="project-detail-content"></div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div class="text-container">
+			<span>Peicen Liu</span>
+		</div>
+		<div class="btn-container">
+			<a href="../about.html">ABOUT</a>
+			<a href="../works.html">WORKS</a>
+			<a class="nowpage" href="../graphic design.html">GRAPHIC DESIGN</a>
+			<a href="https://drive.google.com/file/d/1nu_SvPkmKwNjqZmivEJHaXBu2ofRTJ4h/view?usp=sharing" target="_blank">RESUME</a><<br />
+			<a href="../index.html"><i class="fa fa-home" style="font-size:20px;"></i></a>
+		</div>
+	</div>
+	<div id="BackdropBox">
+		<div class="backdrop-content">
+			<!-- <div class="backdrop-header"> -->
+				<!-- <button type="button" class="closebtn">
+  					<span aria-hidden="true">&times;</span>
+				</button> -->
+				<div class="backdrop-outer">
+				  <div class="backdrop-inner">
+				    <label onclick="closeBtn()">Back</label>
+				  </div>
+				</div>
+			<!-- </div> -->
+			<div class="backdrop-figure">
+				<img id="outcome-img" src="">
+			</div>
+		</div>
+	</div>
+	<script src="../css/aos.js"></script>
+    <script>
+		AOS.init({
+		easing: 'ease-in-out-sine'
+		});
+		//圖片放大
+		function openImg() {
+			var nowid = event.target.id;  //取當前event的id
+			var num = nowid.charAt(nowid.length - 1); //取出id編號的最後字元
+			//var imgsrc=document.getElementById("img-num").src;
+		  document.getElementById("BackdropBox").style.display = "flex";
+		  document.getElementById("outcome-img").src="../img/et-img"+num+".png";  //將src設為當前id對應的圖片
+		}
+		// 關閉按鈕
+	    function closeBtn() {
+		  document.getElementById("BackdropBox").style.display = "none";
+		}
+    </script>
+</body>
+</html>
